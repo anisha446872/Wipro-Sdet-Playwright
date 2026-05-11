@@ -642,4 +642,146 @@
 
 // Prototype is a mechanism in JavaScript that allows objects to inherit properties and methods from another object.
 
-// Every JavaScript object has a hidden link to a prototype object.
+//--------------------------------------------Day7-------------------------------------
+// Definition
+
+// Hoisting is JavaScript's behavior of moving declarations to the top of their scope before execution.
+
+// JavaScript internally processes:
+
+// Variable declarations
+// Function declarations
+
+// before running the code.
+
+// Variable Hoisting
+// var Hoisting
+
+// Variables declared with var are hoisted and initialized with undefined.
+
+// Example
+// console.log(a);
+
+// var a = 10;
+
+// Every JavaScript object has a hidden link to a Prototype
+///----------------------------------------Day9-----------------------------------------------------------
+// 1. Default Parameters
+
+// Default parameters allow a function to use a predefined value when no argument is passed.
+
+// Syntax
+// function functionName(parameter = defaultValue) {
+    
+// }
+// Example
+// function welcome(name = "Guest") {
+//     console.log(`Welcome ${name}!`);
+// }
+
+// welcome("Aaryan"); // Welcome Aaryan!
+// welcome();         // Welcome Guest!
+// Benefits
+// Avoids undefined values
+// Makes functions cleaner
+// Reduces manual checking
+// 2. Spread Operator (...)
+
+// The spread operator expands elements of an array or object.
+
+// Array Spread
+
+// Used to copy or merge arrays.
+
+// Example
+// const nums = [1, 2, 3];
+// const newNums = [...nums, 4, 5];
+
+// console.log(newNums);
+// Output
+// [1, 2, 3, 4, 5]
+// Object Spread
+
+// Used to copy or extend objects.
+
+// Example
+// const obj = { name: "Aryan" };
+
+// const updatedObj = {
+//     ...obj,
+//     age: 25
+// };
+
+// console.log(updatedObj);
+// Output
+// { name: "Aryan", age: 25 }
+// Benefits
+// Easy cloning
+// Immutable updates
+// Cleaner syntax
+// 3. Rest Operator (...)
+
+// The rest operator collects multiple values into a single array.
+
+// Rest Parameters in Functions
+// Example
+// const cal = {
+//     sum: (...nums) => nums.reduce((a, b) => a + b, 0)
+// };
+
+// console.log(cal.sum(1, 2, 43, 4));
+// Output
+// 50
+// How It Works
+// (...nums)
+
+// collects all arguments into an array:
+
+// [1, 2, 43, 4]
+// Benefits
+// Handles unlimited arguments
+// Replaces arguments object
+// Cleaner function design
+// 4. Array Destructuring
+
+// Destructuring extracts array values into variables based on position.
+
+// Syntax
+// const [a, b] = array;
+// Example
+// const [first, second, third, fourth] =
+// ["Aryan", "Arush", "Vivek", "Rohit"];
+
+// console.log(first, second);
+// Output
+// Aryan Arush
+// Rest with Destructuring
+// Example
+// const [one, two, ...three] = [1, 3, 5, 6, 7];
+
+// console.log(one);
+// console.log(two);
+// console.log(three);
+// Output
+// 1
+// 3
+// [5, 6, 7]
+// Benefits
+// Cleaner extraction
+// Reduces repetitive code
+// Easy handling of remaining values
+// 5. Object Destructuring
+
+// Extracts object properties into variables using keys.
+
+// Syntax
+// const { key } = object;
+// Example
+// const { name, age } = {
+//     name: "Aryan",
+//     age: 25
+// };
+
+// console.log(name, age);
+// Output
+// Aryan 25
