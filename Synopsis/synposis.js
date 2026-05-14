@@ -785,3 +785,240 @@
 // console.log(name, age);
 // Output
 // Aryan 25
+// What is TypeScript?
+
+// TypeScript is a superset of JavaScript developed by Microsoft.
+
+// Adds static typing
+// Helps catch errors during development
+// Compiles into normal JavaScript
+// Used in Angular, React, Node.js, etc.
+// 6. Enums
+
+// Enums store fixed constant values.
+// 8. Tuples
+
+// Tuples store fixed-size arrays with fixed datatypes.
+// . Generics
+
+// Generics create reusable components.
+
+// Generic Function
+// function identity<T>(arg: T): T {
+//     return arg;
+// }
+
+//-------------------------------------------------------------------------------------Day10--------------------------------------------------------------
+//  Partial Type
+
+// Partial<T> makes all properties of a type optional.
+
+// Syntax
+// Partial<Type>
+// Example
+// interface User {
+//     id: number;
+//     name: string;
+//     email: string;
+// }
+
+// const updateUser: Partial<User> = {
+//     name: "Anisha"
+// };
+
+// console.log(updateUser);
+// Use
+// Updating objects
+// Optional form fields
+// Patch APIs
+// 2. DeepPartial Type
+
+// DeepPartial<T> makes all nested properties optional recursively.
+
+// Custom DeepPartial
+// type DeepPartial<T> = {
+//     [P in keyof T]?: T[P] extends object
+//         ? DeepPartial<T[P]>
+//         : T[P];
+// };
+// Example
+// interface Employee {
+//     name: string;
+//     address: {
+//         city: string;
+//         pin: number;
+//     };
+// }
+
+// const emp: DeepPartial<Employee> = {
+//     address: {
+//         city: "Patna"
+//     }
+// };
+
+// console.log(emp);
+// Use
+// Nested object updates
+// Complex API data editing
+// 3. Type Guarding
+
+// Type Guards check the type of a variable during runtime.
+
+// a) typeof
+
+// Used for primitive types.
+
+// function check(value: string | number) {
+//     return typeof value === "string"
+//         ? `String: ${value}`
+//         : `Number: ${value}`;
+// }
+
+// console.log(check("Hello"));
+// console.log(check(10));
+// b) instanceof
+
+// Used with classes/objects.
+
+// class Car {
+//     drive() {
+//         console.log("Driving");
+//     }
+// }
+
+// const vehicle = new Car();
+
+// if (vehicle instanceof Car) {
+//     vehicle.drive();
+// }
+// c) in Operator
+
+// Checks property existence.
+
+// interface Admin {
+//     role: string;
+// }
+
+// interface User {
+//     email: string;
+// }
+
+// function checkPerson(person: Admin | User) {
+//     return "role" in person
+//         ? `Admin Role: ${person.role}`
+//         : `User Email: ${person.email}`;
+// }
+// Use
+// Safe type checking
+// Handling union types
+// 4. Omit Type
+
+// Omit<T, K> removes specific properties from a type.
+
+// Syntax
+// Omit<Type, Keys>
+// Example
+// interface Student {
+//     id: number;
+//     name: string;
+//     password: string;
+// }
+
+// type PublicStudent = Omit<Student, "password">;
+
+// const student: PublicStudent = {
+//     id: 1,
+//     name: "Anisha"
+// };
+
+// console.log(student);
+// Use
+// Hide sensitive fields
+// Create simplified objects
+// 5. Readonly Type
+
+// Readonly<T> makes properties immutable.
+
+// Syntax
+// Readonly<Type>
+// Example
+// interface Product {
+//     id: number;
+//     name: string;
+// }
+
+// const product: Readonly<Product> = {
+//     id: 101,
+//     name: "Laptop"
+// };
+
+// // product.name = "Phone"; 
+
+// console.log(product);
+// Use
+// Prevent accidental modification
+// Immutable data handling
+// Type Narrowing in TypeScript
+// Type Narrowing means reducing a variable’s possible types into a more specific type using conditions.
+// It helps TypeScript understand the exact type during runtime.
+// Express.js?
+
+// Express.js is a lightweight web framework for Node.js used to build:
+
+// Web servers
+// REST APIs
+// Backend applications
+
+// It simplifies server-side development in JavaScript.
+
+// Installation
+// Initialize Project
+// npm init -y
+// Install Express
+// npm install express
+//----------------------------------------------------------------------------Day12-----------------------------------------------------------------------
+// Introduction to Playwright
+
+// Playwright is an automation testing framework developed by Microsoft used for:
+
+// Web Testing
+// UI Automation
+// End-to-End Testing (E2E)
+// Cross-browser testing
+
+// It supports:
+
+// Chromium
+// Firefox
+// WebKit
+
+// Playwright works with:
+
+// JavaScript
+
+
+
+// Official Website: Playwright
+
+// Installation
+// npm init playwright@latest
+
+// This command:
+
+// Creates Playwright project
+// Installs dependencies
+// Creates test folder
+// Creates sample test files
+
+// Run test:
+
+// npx playwright test
+// Playwright is a modern automation framework used for testing web applications efficiently.
+// In this program you learned:
+
+// Creating test cases
+// Opening websites
+// Clicking elements
+// Validating title and headings
+// Using expect()
+// Using locators like `getByRole()``
