@@ -1022,3 +1022,116 @@
 // Validating title and headings
 // Using expect()
 // Using locators like `getByRole()``
+//------------------------------------------------------------------------------------------------Day13----------------------------------------------------------------------------------------------------------
+// Express.js Login Application – Synopsis
+// Introduction
+
+// This project is a simple login application developed using Express.js and Node.js.
+// It demonstrates routing, middleware usage, static file serving, form handling, validation, and environment variable configuration.
+
+// Modules Used
+// 1. Express
+// const express = require('express');
+// Used to create the web server.
+// Handles routing and HTTP requests/responses.
+// 2. Path
+// const path = require('path');
+// Helps work with file and directory paths.
+// Used for sending HTML files safely.
+// 3. Dotenv
+// require('dotenv').config();
+// Loads environment variables from a .env file.
+// Used here to store the PORT number securely.
+// Server Initialization
+// const PORT = process.env.PORT;
+// const app = express();
+// PORT stores the server port number from .env.
+// app creates the Express application instance.
+
+// Example .env file:
+
+// PORT=3000
+// Middleware Used
+// 1. JSON Middleware
+// app.use(express.json());
+// Parses incoming JSON data from requests.
+// 2. URL Encoded Middleware
+// app.use(express.urlencoded({ extended: true }));
+// Reads form data submitted through HTML forms.
+// 3. Static Middleware
+// app.use(express.static('public'));
+// Serves static files like:
+// HTML
+// CSS
+// JavaScript
+// Images
+// Routing
+// Home Route
+// app.get('/', async (req, res) => {
+//     res.sendFile(path.join(__dirname, "public/index.html"));
+// });
+// Purpose
+// Opens the homepage when the user visits /.
+// Function
+// Sends index.html from the public folder.
+// Login Route
+// app.get('/login', async (req, res) => {
+//     res.sendFile(path.join(__dirname, "public/login.html"));
+// });
+// Purpose
+// Opens the login page.
+// Function
+// Sends login.html file to the browser.
+// Login Authentication
+// app.post('/loginwithcreds', (req, res) => {
+//     const { username, password } = req.body;
+// Receives username and password from the login form.
+// Uses object destructuring for cleaner code.
+// Validation Logic
+// Username & Password Length Check
+// if(username.length <= 3 || password.length <= 5)
+// Condition
+// Username must be greater than 3 characters.
+// Password must be greater than 5 characters.
+// Response
+// res.send("Username length must be greater than 3 & Password 5");
+// Login Success Condition
+// else if (username === "admin123" && password === "admin123")
+// Purpose
+// Checks if credentials match predefined values.
+// Response
+// res.send("Login successful");
+// Invalid Login
+// else {
+//     res.status(401).send("Invalid credentials");
+// }
+// Purpose
+// Executes when credentials are incorrect.
+// Status Code
+// 401 = Unauthorized Access
+// Server Listening
+// app.listen(PORT, () => console.log(`App started on PORT:${PORT}`));
+// Purpose
+// Starts the server on the specified port.
+// Output Example
+// App started on PORT:3000
+// Features of the Application
+// Uses Express.js server
+// Handles GET and POST requests
+// Uses middleware for request parsing
+// Serves static HTML files
+// Performs basic login validation
+// Uses environment variables
+// Sends proper HTTP status codes
+// Conclusion
+
+// This Express.js login application is a beginner-friendly backend project that demonstrates:
+
+// Routing
+// Middleware
+// Form handling
+// Authentication logic
+// Static file serving
+// Environment variable management
+
+// It provides the foundation for building advanced authentication systems using databases and secure password encryption in future applications.
