@@ -1,1137 +1,1188 @@
 
-// Synopsis
+Synopsis
 
-// -----------------------------------------------------DAY 1-------------------------------------------------------------------
+-----------------------------------------------------DAY 1-------------------------------------------------------------------
 
-// What is javaScript?
-// -> javaScript is lightweight , interpreted high level language
-// -> generally use to make web pages
-// -> it is a interperted language
+What is javaScript?
+-> javaScript is lightweight , interpreted high level language
+-> generally use to make web pages
+-> it is a interperted language
 
-// -> HTML is used for structure 
-// -> CSS is used for Design
+-> HTML is used for structure 
+-> CSS is used for Design
 
-// **** And every browser supports it , and it runs on their engine , every browser have there own engine Chromium-based browsers
+**** And every browser supports it , and it runs on their engine , every browser have there own engine Chromium-based browsers
 
-// Then We have learnt What is the difference between declaration and initilisation 
-// Declaration is used to declare a variable
+Then We have learnt What is the difference between declaration and initilisation 
+Declaration is used to declare a variable
 
-// let abc;
+let abc;
 
-// initilisation is used to initilise a variable
+initilisation is used to initilise a variable
 
-// abc = 5;
+abc = 5;
 
-// Declaration and initilisation together looks like
+Declaration and initilisation together looks like
 
-// let abc = 5;
+let abc = 5;
 
-// after that we have learnt what is the difference between VAR and LET AND CONST
-//  ->  var is applicable everywhere
-//  ->  let is limited to braces , {}
+after that we have learnt what is the difference between VAR and LET AND CONST
+ ->  var is applicable everywhere
+ ->  let is limited to braces , {}
 
 
-// Then we have talked about Node js and js
+Then we have talked about Node js and js
 
-// >>> Node js is runtime of javaScript
+>>> Node js is runtime of javaScript
 
-// ->>> javaScript is a client side scripting 
-// ----features of js
-// -> fast driven 
-// -> dynamic typing 
+->>> javaScript is a client side scripting 
+----features of js
+-> fast driven 
+-> dynamic typing 
 
-// Then we studied about Client -Server- Architecture
-// -> Request and Response Is made in it 
-// client request data from the server using https
-// and get the resposne from it 
+Then we studied about Client -Server- Architecture
+-> Request and Response Is made in it 
+client request data from the server using https
+and get the resposne from it 
 
-// Whatever we do in js we will get results in Json File 
+Whatever we do in js we will get results in Json File 
 
-// --> Json file is nothing but the object which stores the data in key value pairs
+--> Json file is nothing but the object which stores the data in key value pairs
 
 
 
-// *******Once we made the request and gets the response the connection is closed********
+*******Once we made the request and gets the response the connection is closed********
 
-// There are 3 states of reqest response Cycle
-// 1. pending - process is still pending
-// 2. Succesfull - process is completed and the client gets what he wants
-// 3. Failed - the process  is failed due to some internal errrors
+There are 3 states of reqest response Cycle
+1. pending - process is still pending
+2. Succesfull - process is completed and the client gets what he wants
+3. Failed - the process  is failed due to some internal errrors
 
 
-// Erros can be like 404 , 500, 204 208, 501 etc
+Erros can be like 404 , 500, 204 208, 501 etc
 
-// most important
-// When we do login it uses post requests and not the get
+most important
+When we do login it uses post requests and not the get
 
 
-// Then we had performed some basic opertions on string like
+Then we had performed some basic opertions on string like
 
-// let str= "Akrmashit Sha";
+let str= "Akrmashit Sha";
 
-// console.log("String:", str);
-// console.log("Length of string:", str.length); //  gives the length of string
-// console.log("Uppercase:", str.toUpperCase()); // convert to Uppercase
-// console.log("Lowercase:", str.toLowerCase()); // convert to lowercase
-// console.log("Substring (0-5):", str.substring(0, 5)); // gives the substring from 0 to 5 *** remember this 0 is included and 5 is exclusive
+console.log("String:", str);
+console.log("Length of string:", str.length); //  gives the length of string
+console.log("Uppercase:", str.toUpperCase()); // convert to Uppercase
+console.log("Lowercase:", str.toLowerCase()); // convert to lowercase
+console.log("Substring (0-5):", str.substring(0, 5)); // gives the substring from 0 to 5 *** remember this 0 is included and 5 is exclusive
 
 
-// Then we performed some mathematical and logical operations
+Then we performed some mathematical and logical operations
 
-// let a = 5;
-// let b = 6;
+let a = 5;
+let b = 6;
 
-// -----> Mathematical operations <-----
-// console.log("Addition:", a + b);
-// console.log("Subtraction:", a - b);
-// console.log("Multiplication:", a * b);
-// console.log("Division:", a / b);
-// console.log("Remainder:", a % b); // Remainder (Modulo)
+-----> Mathematical operations <-----
+console.log("Addition:", a + b);
+console.log("Subtraction:", a - b);
+console.log("Multiplication:", a * b);
+console.log("Division:", a / b);
+console.log("Remainder:", a % b); // Remainder (Modulo)
 
-// ----> Logical operations  <-----
-// console.log("a > b:", a > b); // F
-// console.log("a < b:", a < b); // T
-// console.log("a == b:", a == b); // F === Strict equality (checks value and type)
-// console.log("a != b:", a != b); // T
-// console.log("a >= b:", a >= b); // F
-// console.log("a <= b:", a <= b); // T
+----> Logical operations  <-----
+console.log("a > b:", a > b); // F
+console.log("a < b:", a < b); // T
+console.log("a == b:", a == b); // F === Strict equality (checks value and type)
+console.log("a != b:", a != b); // T
+console.log("a >= b:", a >= b); // F
+console.log("a <= b:", a <= b); // T
 
-// then we learnt about objects in js and some basic operatins on it
+then we learnt about objects in js and some basic operatins on it
 
-// let obj = {
-//     name: "Alice",
-//     age: 30,
-//     city: "New York"
-// }
-// console.log("Object:", obj);         --->        print the whole object file in curley braces in a single line
-// console.log("Name:", obj.name);      --->        prints the Name: Alice
-// console.log("Age:", obj.age);        --->        prints the Age: 30
-// console.log("City:", obj.city);      --->        prints the City: New York
+let obj = {
+    name: "Alice",
+    age: 30,
+    city: "New York"
+}
+console.log("Object:", obj);         --->        print the whole object file in curley braces in a single line
+console.log("Name:", obj.name);      --->        prints the Name: Alice
+console.log("Age:", obj.age);        --->        prints the Age: 30
+console.log("City:", obj.city);      --->        prints the City: New York
 
-// then we have learnt about the loops
-// ---> For loop
-// ---> While loop
-// ---> Do while loop
+then we have learnt about the loops
+---> For loop
+---> While loop
+---> Do while loop
 
-// then we learnt about how to check the type of the value whether it is string, number , array, boolean , float etc.
+then we learnt about how to check the type of the value whether it is string, number , array, boolean , float etc.
 
-// ---> Syntax <----
-// let a = "5";
+---> Syntax <----
+let a = "5";
 
-// console.log(typeOf(a));   >>>> it will give me the type of a,    i.e. string
-// 
-// -----------------------------------------------------------------DAY 2---------------------------------------------------------------
+console.log(typeOf(a));   >>>> it will give me the type of a,    i.e. string
 
+-----------------------------------------------------------------DAY 2---------------------------------------------------------------
 
-// We started our Day with knowing about String Literals 
 
-// -> firstly it is the feature of ES6 
-// -->  represented by back ticks (``)
-// ----> inside these back ticks everything works normally as a javascript file but if we want to add some words in between 
-//       which we don't want to be interereted like a javascript code , we can use dollar and curley braces for that 
+We started our Day with knowing about String Literals 
 
+-> firstly it is the feature of ES6 
+-->  represented by back ticks (``)
+----> inside these back ticks everything works normally as a javascript file but if we want to add some words in between 
+      which we don't want to be interereted like a javascript code , we can use dollar and curley braces for that 
 
-// ..................for example:......................
 
-// let name = "Anisha Kumari";
-// console.log(`My name is ${name}`);
+..................for example:......................
 
-// it will print My name is Anisha kumari
+let name = "Anisha Kumari";
+console.log(`My name is ${name}`);
 
-// we can also done it by using inverted comma, but it looks clumsy for long code so we use this instead
+it will print My name is Anisha kumari
 
-// few more exapmples
+we can also done it by using inverted comma, but it looks clumsy for long code so we use this instead
 
-// function table(num) {
-//     let result = "";
-//     for (let i = 1; i <= 10; i++) {
-//         // console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
-//         // result += `${num} x ${i} = ${num * i}\n`;
-//         result += `${num} * ${i} = ${num*i} \t`
-//     }
-//     return result;
-// }
-// console.log(table(5));
+few more exapmples
 
+function table(num) {
+    let result = "";
+    for (let i = 1; i <= 10; i++) {
+        // console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
+        // result += `${num} x ${i} = ${num * i}\n`;
+        result += `${num} * ${i} = ${num*i} \t`
+    }
+    return result;
+}
+console.log(table(5));
 
-// function table1(num) {
 
-//     for (let i = 1; i <= 10; i++) {
-//         console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
-//     }
-// }
-// table1(5);
+function table1(num) {
 
+    for (let i = 1; i <= 10; i++) {
+        console.log(num + " x " + i + " = " + (num * i)); // Using string concatenation
+    }
+}
+table1(5);
 
 
 
-// After this we have learnt about the arrow functions
-// what is it how it works
 
-// *****Arrow function*****
+After this we have learnt about the arrow functions
+what is it how it works
 
-// Arrow function used to minimise the code into a single line
+*****Arrow function*****
 
-// let arr = [1, 2, 3, 4, 5, "Aaryan"];
+Arrow function used to minimise the code into a single line
 
-// arr.filter(function(x) {
-// }).forEach(function(abc) {
-//     return typeof x === "number";
-// }).map(function(y) {
-//     return y * 2;
-//     console.log("Element after * 2:", abc * 2);
-// });
+let arr = [1, 2, 3, 4, 5, "Aaryan"];
 
+arr.filter(function(x) {
+}).forEach(function(abc) {
+    return typeof x === "number";
+}).map(function(y) {
+    return y * 2;
+    console.log("Element after * 2:", abc * 2);
+});
 
-// if we write a code normally it looks like this as above
-// but if we write it as arrow function it looks like
 
-// arr.filter(x => typeof x === "number").map(y => y * 2).forEach(abc => console.log("Element after * 2:", abc * 2));
+if we write a code normally it looks like this as above
+but if we write it as arrow function it looks like
 
+arr.filter(x => typeof x === "number").map(y => y * 2).forEach(abc => console.log("Element after * 2:", abc * 2));
 
 
-// ##### Filter is used to separate the same type of data from the array 
-// ##### Map is used to transform every element in an array and create a new array with the results
-// ##### foreach is a loop and nothing else 
 
+##### Filter is used to separate the same type of data from the array 
+##### Map is used to transform every element in an array and create a new array with the results
+##### foreach is a loop and nothing else 
 
-// Then we have learnt about Random function
-// --> Random function is use to get random value between 0 and 1
-// console.log(Math.random());  >>>> it will give me any random value between 0 and 1
 
-// if we want random value between 0 and 100 
-// --> console.log(Math.floor(Math.random() * 100) + 1);  //  it will provide me random value between 0 and 100
+Then we have learnt about Random function
+--> Random function is use to get random value between 0 and 1
+console.log(Math.random());  >>>> it will give me any random value between 0 and 1
 
+if we want random value between 0 and 100 
+--> console.log(Math.floor(Math.random() * 100) + 1);  //  it will provide me random value between 0 and 100
 
-// then we Talked about Floor and Ceil
 
-// ---> Floor function   is used to get the lower bound value of a float value 
-// example
-// >>>      Math.floor(0.99999);  is 0 
-// >>>      Math.floor(99.99);   is 99
+then we Talked about Floor and Ceil
 
+---> Floor function   is used to get the lower bound value of a float value 
+example
+>>>      Math.floor(0.99999);  is 0 
+>>>      Math.floor(99.99);   is 99
 
-// ---> Ceil  function is used to get the upper bound value of a float value 
-// example
-// >>>      Math.ceil(0.9999);   is 1
-// >>>      Math.ceil(99.99);    is 100
-// >>>      Math.ceil (0.1111);  is 1
 
-// then we learnt about typecasting
-// string to Number 
-// number to String
+---> Ceil  function is used to get the upper bound value of a float value 
+example
+>>>      Math.ceil(0.9999);   is 1
+>>>      Math.ceil(99.99);    is 100
+>>>      Math.ceil (0.1111);  is 1
 
-// >>>> Syntax is written below
+then we learnt about typecasting
+string to Number 
+number to String
 
-// let strnum = "5";
-// console.log(Number(strnum));   ***** convert the string into number
-// console.log(String(5));        ***** convert the number into string
+>>>> Syntax is written below
 
-// then we learnt typecating into integer and float
+let strnum = "5";
+console.log(Number(strnum));   ***** convert the string into number
+console.log(String(5));        ***** convert the number into string
 
-// let val = "0.6";
-// console.log(parseInt(val));       *********  0 it will convert string into integer (wokrs like floor give the lower value)
-// console.log(parseFloat(val));     *********  0.6 it will convert string into float (give the same)
+then we learnt typecating into integer and float
 
-// then we learnt about some basic operations on array
+let val = "0.6";
+console.log(parseInt(val));       *********  0 it will convert string into integer (wokrs like floor give the lower value)
+console.log(parseFloat(val));     *********  0.6 it will convert string into float (give the same)
 
-// let colors = ["red", "green", "blue"];
+then we learnt about some basic operations on array
 
+let colors = ["red", "green", "blue"];
 
-// *************************************operations*************************************************
 
+*************************************operations*************************************************
 
-// console.log(colors.indexOf("yellow"));          >>>> -1
-// console.log(colors.includes("yellow"));         >>>> false
-// console.log(colors.length);                     >>>> 3
-// console.log(colors[3]);                         >>>> undefined
-// console.log(colors[colors.length - 1]);         >>>> "blue"
-// colors.push("yellow");                          >>>> Adds "yellow" to the end of the array
-// console.log(colors);                            >>>> ["red", "green", "blue", "yellow"]
-// colors.pop();                                   >>>> Removes the last element ("yellow")
-// console.log(colors);                            >>>> ["red", "green", "blue"]
-// colors.unshift("purple");                       >>>> Adds "purple" to the beginning of the array
-// console.log(colors);                            >>>> ["purple", "red", "green", "blue"]
-// colors.shift();                                 >>>> Removes the first element ("purple")
-// console.log(colors);                            >>>> ["red", "green", "blue"]
 
+console.log(colors.indexOf("yellow"));          >>>> -1
+console.log(colors.includes("yellow"));         >>>> false
+console.log(colors.length);                     >>>> 3
+console.log(colors[3]);                         >>>> undefined
+console.log(colors[colors.length - 1]);         >>>> "blue"
+colors.push("yellow");                          >>>> Adds "yellow" to the end of the array
+console.log(colors);                            >>>> ["red", "green", "blue", "yellow"]
+colors.pop();                                   >>>> Removes the last element ("yellow")
+console.log(colors);                            >>>> ["red", "green", "blue"]
+colors.unshift("purple");                       >>>> Adds "purple" to the beginning of the array
+console.log(colors);                            >>>> ["purple", "red", "green", "blue"]
+colors.shift();                                 >>>> Removes the first element ("purple")
+console.log(colors);                            >>>> ["red", "green", "blue"]
 
-// after that we learnt the splice function 
 
-// console.log(colors.splice(0, 1));
-// console.log(colors.splice(1, 2));
-// console.log(colors.splice(1, 3));
-// // console.log(colors.splice(Math.floor(Math.random() * (colors.length - 2)), 1));
-// // let str = "Hello World";
-// // console.log(str.slice(0, 5)); // "Hello"
+after that we learnt the splice function 
 
-// after it we learnt about the reduce function 
-// ******************Reduce Function****************************
+console.log(colors.splice(0, 1));
+console.log(colors.splice(1, 2));
+console.log(colors.splice(1, 3));
+// console.log(colors.splice(Math.floor(Math.random() * (colors.length - 2)), 1));
+// let str = "Hello World";
+// console.log(str.slice(0, 5)); // "Hello"
 
-// >>> Reduce function 
+after it we learnt about the reduce function 
+******************Reduce Function****************************
 
-// const prices = [10, 20, 30, 40]; // tasks: find the total of all elements
-// let s = 0;
-// for (let i = 0; i < prices.length; i++) {
-//     s += prices[i]; // s = s + prices[i]
-// }
+>>> Reduce function 
 
-// it simple way we use to do like this if we want the sum of the array elements , we need to declare a new variable
+const prices = [10, 20, 30, 40]; // tasks: find the total of all elements
+let s = 0;
+for (let i = 0; i < prices.length; i++) {
+    s += prices[i]; // s = s + prices[i]
+}
 
-// but by using reduce function it is much easier
+it simple way we use to do like this if we want the sum of the array elements , we need to declare a new variable
 
-// const total = prices.reduce((acc, curr) => { return acc + curr }, 0);
-// // 0 + 10 = 10     Dry run
-// // 10 + 20 = 30    Dry run 
-// // 30 + 30 = 60    Dry run 
-// // 60 + 40 = 100   Dry run  
-// console.log(total);
-// // console.log("Sum:", s);
-// ->>>>   acc stands for accumulator
-// ->>>>   currr stands for current value from the array
-// ->>>>   0 tells that the initial value of the accumulator is 0
+but by using reduce function it is much easier
 
-// reduce function inject the next value of current from the array
+const total = prices.reduce((acc, curr) => { return acc + curr }, 0);
+// 0 + 10 = 10     Dry run
+// 10 + 20 = 30    Dry run 
+// 30 + 30 = 60    Dry run 
+// 60 + 40 = 100   Dry run  
+console.log(total);
+// console.log("Sum:", s);
+->>>>   acc stands for accumulator
+->>>>   currr stands for current value from the array
+->>>>   0 tells that the initial value of the accumulator is 0
 
-// more different version of reduce function is written below
+reduce function inject the next value of current from the array
 
+more different version of reduce function is written below
 
-// const fruitBasket = ['apple', 'banana', 'cherry', 'apple', 'apple', 'banana', 'pineapple']; // apple: 3, banana: 3, cherry: 1, pineapple: 1
-// const tally = fruitBasket.reduce((acc, fruit) => {
-//     acc[fruit] = (acc[fruit] || 0) + 1;
-//     return acc;
-// }, {}); // intial value of acc is an empty object
-// console.log(tally);
 
+const fruitBasket = ['apple', 'banana', 'cherry', 'apple', 'apple', 'banana', 'pineapple']; // apple: 3, banana: 3, cherry: 1, pineapple: 1
+const tally = fruitBasket.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {}); // intial value of acc is an empty object
+console.log(tally);
 
 
-// after this we made a simple login page
-// containing using html css and javascript
 
+after this we made a simple login page
+containing using html css and javascript
 
-//--------------------------------------------------------Day4-----------------------------------------------------------
 
+--------------------------------------------------------Day4-----------------------------------------------------------
 
 
-// Asynchronous :- Asynchronous programming in JavaScript allows code to run non-blocking operations, enabling tasks like network requests or file reading without freezing the main thread. 
 
-// Promise :- A Promise in JavaScript is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+Asynchronous :- Asynchronous programming in JavaScript allows code to run non-blocking operations, enabling tasks like network requests or file reading without freezing the main thread. 
 
-// it has 3 state:
-// 1- pending
-// 2- resolved
-// 3- rejected
+Promise :- A Promise in JavaScript is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
-// example:- 
-// function getData() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve("Data received");
-//         }, 2000);
-//     });
-// }
+it has 3 state:
+1- pending
+2- resolved
+3- rejected
+
+example:- 
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data received");
+        }, 2000);
+    });
+}
  
-// getData().then((data) => {
-//     console.log(data);
-// }).catch((error) => {
-//     console.error("Error:", error);
-// });
+getData().then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.error("Error:", error);
+});
 
-// use then ()to handle the fullfilment and catch() to handle rejection.
+use then ()to handle the fullfilment and catch() to handle rejection.
 
-// ## setTimeout():- it it use to run a code after the few sec later, mention the time in code.
+## setTimeout():- it it use to run a code after the few sec later, mention the time in code.
 
-// setTimeout(() => {
-//      console.log("Data received");
-//  }, 5000);
+setTimeout(() => {
+     console.log("Data received");
+ }, 5000);
 
-// ## setInterval():- it run the code after every interval of time.
+## setInterval():- it run the code after every interval of time.
  
 
-//  example:=
-//  setInterval(() => {
-//     console.log("Checking for new data...");
-// }, 3000);
+ example:=
+ setInterval(() => {
+    console.log("Checking for new data...");
+}, 3000);
 
 
-// What is fetch()?
-// fetch() is used to request data from an API (server)
-// It returns a Promise
-// The Promise is handled using .then() and .catch()
-// 3. Code Flow Explanation
-// fetch("https://jsonplaceholder.typicode.com/todos")
-// Sends a request to an API
-// Returns a Promise (pending → resolved/rejected)
-// Step 1: Convert response to JSON
-// .then(res => res.json())
-// Converts response into JavaScript object (JSON format)
-// Step 2: Filter Data
-// .then(data => data.filter(d => d.id % 2 === 0))
-// Keeps only even ID records
-// Step 3: Modify Data
-// .then(data => data.map(d => (d.title = "Anisha " + d.title)))
-// Adds prefix "Anisha " to each title
-// Step 4: Display Output
-// .then(data => console.log(data))
-// Prints final processed data to console
-// Step 5: Error Handling
-// .catch(error => console.error("Error fetching data:", error));
-// Handles errors if request fails
-// 4. Key Concepts Used
-// Asynchronous Programming
-// Code does not wait for API response
-// Other tasks can run while data is being fetched
-// Promises
-// Used to handle async operations
-// States:
-// Pending
-// Resolved
-// Rejected
-// Method Chaining
-// Multiple .then() used in sequence
-// Each step processes data and passes it forward
-// 5. Conclusion
+What is fetch()?
+fetch() is used to request data from an API (server)
+It returns a Promise
+The Promise is handled using .then() and .catch()
+3. Code Flow Explanation
+fetch("https://jsonplaceholder.typicode.com/todos")
+Sends a request to an API
+Returns a Promise (pending → resolved/rejected)
+Step 1: Convert response to JSON
+.then(res => res.json())
+Converts response into JavaScript object (JSON format)
+Step 2: Filter Data
+.then(data => data.filter(d => d.id % 2 === 0))
+Keeps only even ID records
+Step 3: Modify Data
+.then(data => data.map(d => (d.title = "Anisha " + d.title)))
+Adds prefix "Anisha " to each title
+Step 4: Display Output
+.then(data => console.log(data))
+Prints final processed data to console
+Step 5: Error Handling
+.catch(error => console.error("Error fetching data:", error));
+Handles errors if request fails
+4. Key Concepts Used
+Asynchronous Programming
+Code does not wait for API response
+Other tasks can run while data is being fetched
+Promises
+Used to handle async operations
+States:
+Pending
+Resolved
+Rejected
+Method Chaining
+Multiple .then() used in sequence
+Each step processes data and passes it forward
+5. Conclusion
 
-// This code shows how JavaScript handles asynchronous operations efficiently using fetch and Promises. It performs data fetching, filtering, transformation, and error handling in a clean and structured way.
+This code shows how JavaScript handles asynchronous operations efficiently using fetch and Promises. It performs data fetching, filtering, transformation, and error handling in a clean and structured way.
  
-//-------------------------------------------------------------Day5----------------------------------------------------------------------------
-
-// await fetch()
-// Sends request to internet
-// Waits for response
-// await res.json()
-// Converts response → JavaScript object
-// .filter()
-// Removes unwanted data
-
-// Example:
-
-// .filter(u => u.age > 25)
-//  .map()
-// Converts data into new format
-
-// Example:
-
-// .map(u => u.name)
-//  console.log()
-// Shows final result
-//  Promise
-// Promise = result of async work (future value)
-
-// Sync  -	Runs step by step
-// Async  -	Runs in background
-// Promise - Handles async result
-// async  -	Creates promise function
-// await  -	Waits for promise
-// Synchronous runs line by line, asynchronous runs in background,
-//  Promise handles async operations, and 
-//  async/await is a cleaner way to work with Promises.
-
-
-// Object-Oriented Programming (OOP)
-// Object-Oriented Programming (OOP) is a programming paradigm based on objects and classes.
-// It helps in organizing code into reusable and structured units.
-//  OOP models real-world entities like users, products, bank accounts, etc.
-
-//  Basic Concepts
-
-// Class → Blueprint/template
-// Object → Instance of class
-// Methods → Functions inside class
-// Properties → Variables inside class
-//  1. Encapsulation
-
-// Encapsulation means hiding data and allowing access only through methods.
-// class Bank {  #balance = 0;  deposit(amount) {    this.#balance += amount;  }  getBalance() {    return this.#balance;  }}
-// Private variables (#) cannot be accessed directly.
-//  2. Inheritance
-// Inheritance allows one class to use properties and methods of another class.
-// class Animal {  speak() {    console.log("Animal speaks");  }}class Dog extends Animal {  speak() {    console.log("Dog barks");  }}
-//  extends is used for inheritance
-// super() calls parent class
-// 3. Polymorphism
-// Polymorphism means same method, different behavior.
-//  Method overriding = runtime polymorphism
-// 4. Abstraction
-// Abstraction means hiding complex implementation and showing only essential features.
-// OOP is a programming approach that uses encapsulation, inheritance, polymorphism, and abstraction to create modular, reusable, and maintainable code.
-
-// //------------------------------------------------------------------Day6----------------------------------------------------------------------------------
-// Question 1: Flight Data Cleaner
-// Concepts Used
-// 1. Array
-// Used to store raw flight data.
-// const rawFlights = [];
+-------------------------------------------------------------Day5----------------------------------------------------------------------------
+
+await fetch()
+Sends request to internet
+Waits for response
+await res.json()
+Converts response → JavaScript object
+.filter()
+Removes unwanted data
+
+Example:
+
+.filter(u => u.age > 25)
+ .map()
+Converts data into new format
+
+Example:
+
+.map(u => u.name)
+ console.log()
+Shows final result
+ Promise
+Promise = result of async work (future value)
+
+Sync  -	Runs step by step
+Async  -	Runs in background
+Promise - Handles async result
+async  -	Creates promise function
+await  -	Waits for promise
+Synchronous runs line by line, asynchronous runs in background,
+ Promise handles async operations, and 
+ async/await is a cleaner way to work with Promises.
+
+
+Object-Oriented Programming (OOP)
+Object-Oriented Programming (OOP) is a programming paradigm based on objects and classes.
+It helps in organizing code into reusable and structured units.
+ OOP models real-world entities like users, products, bank accounts, etc.
+
+ Basic Concepts
+
+Class → Blueprint/template
+Object → Instance of class
+Methods → Functions inside class
+Properties → Variables inside class
+ 1. Encapsulation
+
+Encapsulation means hiding data and allowing access only through methods.
+class Bank {  #balance = 0;  deposit(amount) {    this.#balance += amount;  }  getBalance() {    return this.#balance;  }}
+Private variables (#) cannot be accessed directly.
+ 2. Inheritance
+Inheritance allows one class to use properties and methods of another class.
+class Animal {  speak() {    console.log("Animal speaks");  }}class Dog extends Animal {  speak() {    console.log("Dog barks");  }}
+ extends is used for inheritance
+super() calls parent class
+3. Polymorphism
+Polymorphism means same method, different behavior.
+ Method overriding = runtime polymorphism
+4. Abstraction
+Abstraction means hiding complex implementation and showing only essential features.
+OOP is a programming approach that uses encapsulation, inheritance, polymorphism, and abstraction to create modular, reusable, and maintainable code.
+
+//------------------------------------------------------------------Day6----------------------------------------------------------------------------------
+Question 1: Flight Data Cleaner
+Concepts Used
+1. Array
+Used to store raw flight data.
+const rawFlights = [];
 
-// 2. map()
-// Used to transform each string into an object.
-// array.map()
+2. map()
+Used to transform each string into an object.
+array.map()
 
-// 3. split()
-// Used to divide strings.
-// split(":")split("-")
+3. split()
+Used to divide strings.
+split(":")split("-")
 
-// 4. Number()
-// Converts string price into number.
-// Number(value)
-
-// 5. isNaN()
-// Checks invalid number.
-// isNaN(price)
-
-// 6. filter()
-// Filters valid flights.
-// filter()
-
-// 7. sort()
-// Sorts prices in ascending order.
-// sort((a,b) => a.price - b.price)
-
-// 8. JSON.stringify()
-// Converts array into JSON string.
-// JSON.stringify(data, null, 2)
+4. Number()
+Converts string price into number.
+Number(value)
+
+5. isNaN()
+Checks invalid number.
+isNaN(price)
+
+6. filter()
+Filters valid flights.
+filter()
+
+7. sort()
+Sorts prices in ascending order.
+sort((a,b) => a.price - b.price)
+
+8. JSON.stringify()
+Converts array into JSON string.
+JSON.stringify(data, null, 2)
 
-// Important Things to Remember
-// ✔ Use [] for array access
-// ✔ map() returns new array
-// ✔ filter() returns filtered array
-// ✔ sort() changes original array
-// ✔ Number() converts string to number
-// ✔ isNaN() checks invalid numbers
+Important Things to Remember
+✔ Use [] for array access
+✔ map() returns new array
+✔ filter() returns filtered array
+✔ sort() changes original array
+✔ Number() converts string to number
+✔ isNaN() checks invalid numbers
 
-// Question 2: Shopping Cart Promotion
-// Concepts Used
-// 1. Callback Function
-// Function passed inside another function.
-// applyPromo(cart, isEligible)
+Question 2: Shopping Cart Promotion
+Concepts Used
+1. Callback Function
+Function passed inside another function.
+applyPromo(cart, isEligible)
 
-// 2. Arrow Function
-// item => {}
+2. Arrow Function
+item => {}
 
-// 3. map()
-// Transforms cart items.
+3. map()
+Transforms cart items.
 
-// 4. Conditional Checking
-// if(condition)
+4. Conditional Checking
+if(condition)
 
-// 5. Spread Operator
-// Copies object data.
-// { ...item }
+5. Spread Operator
+Copies object data.
+{ ...item }
 
-// 6. Template Literals
-// `${value}`
+6. Template Literals
+`${value}`
 
-// 7. setTimeout()
-// Delays output.
-// setTimeout(() => {}, 1000)
+7. setTimeout()
+Delays output.
+setTimeout(() => {}, 1000)
 
-// Important Things to Remember
-// ✔ Callback = function inside another function
-// ✔ Spread operator copies object
-// ✔ Template literal uses backticks `
-// ✔ setTimeout() delay is in milliseconds
+Important Things to Remember
+✔ Callback = function inside another function
+✔ Spread operator copies object
+✔ Template literal uses backticks `
+✔ setTimeout() delay is in milliseconds
 
-// Question 3: Movie Stream Analytics
-// Concepts Used
-// 1. split("|")
-// Separates movie data.
+Question 3: Movie Stream Analytics
+Concepts Used
+1. split("|")
+Separates movie data.
 
-// 2. map()
-// Converts strings into objects.
+2. map()
+Converts strings into objects.
 
-// 3. Number()
-// Converts views into number.
+3. Number()
+Converts views into number.
 
-// 4. isNaN()
-// Checks corrupted data.
+4. isNaN()
+Checks corrupted data.
 
-// 5. filter()
-// Filters:
+5. filter()
+Filters:
 
 
-// Action
+Action
 
 
-// Sci-Fi
+Sci-Fi
 
 
-// Views > 5000
+Views > 5000
 
 
 
-// 6. sort()
-// Descending order sorting.
-// b.views - a.views
+6. sort()
+Descending order sorting.
+b.views - a.views
 
-// 7. JSON.stringify()
-// Returns JSON string.
+7. JSON.stringify()
+Returns JSON string.
 
-// Important Things to Remember
-// ✔ Descending sort:
-// b - a
-// ✔ Ascending sort:
-// a - b
-// ✔ Use:
-// parts[0]
-// NOT:
-// parts(0)
+Important Things to Remember
+✔ Descending sort:
+b - a
+✔ Ascending sort:
+a - b
+✔ Use:
+parts[0]
+NOT:
+parts(0)
 
-// Question 4: Payroll Processor
-// Concepts Used
-// 1. Callback Function
-// taxLogic()
+Question 4: Payroll Processor
+Concepts Used
+1. Callback Function
+taxLogic()
 
-// 2. Tax Calculation
-// salary * taxRate
+2. Tax Calculation
+salary * taxRate
 
-// 3. Ternary Operator
-// condition ? value1 : value2
+3. Ternary Operator
+condition ? value1 : value2
 
-// 4. map()
-// Processes employee data.
+4. map()
+Processes employee data.
 
-// 5. Template Literal
-// `${total}`
+5. Template Literal
+`${total}`
 
-// 6. setTimeout()
-// Waits 2000ms.
+6. setTimeout()
+Waits 2000ms.
 
-// 7. Spread Operator
-// ...employee
+7. Spread Operator
+...employee
 
-// Important Things to Remember
-// ✔ Ternary operator syntax:
-// condition ? trueValue : falseValue
-// ✔ setTimeout(fn, 2000) means wait 2 seconds
-// ✔ Always close functions properly with }
-// ✔ Function call syntax:
-// calculatePayroll(employees, taxLogic)
-// NOT:
-// calculatePayroll(employees.taxLogic)
+Important Things to Remember
+✔ Ternary operator syntax:
+condition ? trueValue : falseValue
+✔ setTimeout(fn, 2000) means wait 2 seconds
+✔ Always close functions properly with }
+✔ Function call syntax:
+calculatePayroll(employees, taxLogic)
+NOT:
+calculatePayroll(employees.taxLogic)
 
-// Most Important JavaScript Functions Used Overall
-// FunctionUsemap()Transform arrayfilter()Filter datasort()Sort arraysplit()Split stringNumber()Convert string to numberisNaN()Check invalid numberJSON.stringify()Convert to JSONsetTimeout()Delay execution
-// Spread Operator (...)
-// Definition
+Most Important JavaScript Functions Used Overall
+FunctionUsemap()Transform arrayfilter()Filter datasort()Sort arraysplit()Split stringNumber()Convert string to numberisNaN()Check invalid numberJSON.stringify()Convert to JSONsetTimeout()Delay execution
+Spread Operator (...)
+Definition
 
-// Spread operator expands elements of array or object.
+Spread operator expands elements of array or object.
 
-// Array Example
-// const arr1 = [1, 2];
-// const arr2 = [...arr1, 3, 4];
+Array Example
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3, 4];
 
-// console.log(arr2);
-// Heap Memory
-// Definition
+console.log(arr2);
+Heap Memory
+Definition
 
-// Heap stores reference type data.
+Heap stores reference type data.
 
-// Stored In Heap
-// Objects
-// Arrays
-// Functions
-// Stack Memory
-// Definition
+Stored In Heap
+Objects
+Arrays
+Functions
+Stack Memory
+Definition
 
-// Stack stores primitive data and function calls.
+Stack stores primitive data and function calls.
 
-// Works in LIFO order:
-// Last In First Out.
-// Prototype
-// Definition
+Works in LIFO order:
+Last In First Out.
+Prototype
+Definition
 
-// Prototype is a mechanism in JavaScript that allows objects to inherit properties and methods from another object.
+Prototype is a mechanism in JavaScript that allows objects to inherit properties and methods from another object.
 
-//--------------------------------------------Day7-------------------------------------
-// Definition
+--------------------------------------------Day7-------------------------------------
+Definition
 
-// Hoisting is JavaScript's behavior of moving declarations to the top of their scope before execution.
+Hoisting is JavaScript's behavior of moving declarations to the top of their scope before execution.
 
-// JavaScript internally processes:
+JavaScript internally processes:
 
-// Variable declarations
-// Function declarations
+Variable declarations
+Function declarations
 
-// before running the code.
+before running the code.
 
-// Variable Hoisting
-// var Hoisting
+Variable Hoisting
+var Hoisting
 
-// Variables declared with var are hoisted and initialized with undefined.
+Variables declared with var are hoisted and initialized with undefined.
 
-// Example
-// console.log(a);
+Example
+console.log(a);
 
-// var a = 10;
+var a = 10;
 
-// Every JavaScript object has a hidden link to a Prototype
-///----------------------------------------Day9-----------------------------------------------------------
-// 1. Default Parameters
+Every JavaScript object has a hidden link to a Prototype
+/----------------------------------------Day9-----------------------------------------------------------
+1. Default Parameters
 
-// Default parameters allow a function to use a predefined value when no argument is passed.
+Default parameters allow a function to use a predefined value when no argument is passed.
 
-// Syntax
-// function functionName(parameter = defaultValue) {
+Syntax
+function functionName(parameter = defaultValue) {
     
-// }
-// Example
-// function welcome(name = "Guest") {
-//     console.log(`Welcome ${name}!`);
-// }
-
-// welcome("Aaryan"); // Welcome Aaryan!
-// welcome();         // Welcome Guest!
-// Benefits
-// Avoids undefined values
-// Makes functions cleaner
-// Reduces manual checking
-// 2. Spread Operator (...)
-
-// The spread operator expands elements of an array or object.
-
-// Array Spread
-
-// Used to copy or merge arrays.
-
-// Example
-// const nums = [1, 2, 3];
-// const newNums = [...nums, 4, 5];
-
-// console.log(newNums);
-// Output
-// [1, 2, 3, 4, 5]
-// Object Spread
-
-// Used to copy or extend objects.
-
-// Example
-// const obj = { name: "Aryan" };
-
-// const updatedObj = {
-//     ...obj,
-//     age: 25
-// };
-
-// console.log(updatedObj);
-// Output
-// { name: "Aryan", age: 25 }
-// Benefits
-// Easy cloning
-// Immutable updates
-// Cleaner syntax
-// 3. Rest Operator (...)
-
-// The rest operator collects multiple values into a single array.
-
-// Rest Parameters in Functions
-// Example
-// const cal = {
-//     sum: (...nums) => nums.reduce((a, b) => a + b, 0)
-// };
-
-// console.log(cal.sum(1, 2, 43, 4));
-// Output
-// 50
-// How It Works
-// (...nums)
-
-// collects all arguments into an array:
-
-// [1, 2, 43, 4]
-// Benefits
-// Handles unlimited arguments
-// Replaces arguments object
-// Cleaner function design
-// 4. Array Destructuring
-
-// Destructuring extracts array values into variables based on position.
-
-// Syntax
-// const [a, b] = array;
-// Example
-// const [first, second, third, fourth] =
-// ["Aryan", "Arush", "Vivek", "Rohit"];
-
-// console.log(first, second);
-// Output
-// Aryan Arush
-// Rest with Destructuring
-// Example
-// const [one, two, ...three] = [1, 3, 5, 6, 7];
-
-// console.log(one);
-// console.log(two);
-// console.log(three);
-// Output
-// 1
-// 3
-// [5, 6, 7]
-// Benefits
-// Cleaner extraction
-// Reduces repetitive code
-// Easy handling of remaining values
-// 5. Object Destructuring
-
-// Extracts object properties into variables using keys.
-
-// Syntax
-// const { key } = object;
-// Example
-// const { name, age } = {
-//     name: "Aryan",
-//     age: 25
-// };
-
-// console.log(name, age);
-// Output
-// Aryan 25
-// What is TypeScript?
-
-// TypeScript is a superset of JavaScript developed by Microsoft.
-
-// Adds static typing
-// Helps catch errors during development
-// Compiles into normal JavaScript
-// Used in Angular, React, Node.js, etc.
-// 6. Enums
-
-// Enums store fixed constant values.
-// 8. Tuples
-
-// Tuples store fixed-size arrays with fixed datatypes.
-// . Generics
-
-// Generics create reusable components.
-
-// Generic Function
-// function identity<T>(arg: T): T {
-//     return arg;
-// }
-
-//-------------------------------------------------------------------------------------Day10--------------------------------------------------------------
-//  Partial Type
-
-// Partial<T> makes all properties of a type optional.
-
-// Syntax
-// Partial<Type>
-// Example
-// interface User {
-//     id: number;
-//     name: string;
-//     email: string;
-// }
-
-// const updateUser: Partial<User> = {
-//     name: "Anisha"
-// };
-
-// console.log(updateUser);
-// Use
-// Updating objects
-// Optional form fields
-// Patch APIs
-// 2. DeepPartial Type
-
-// DeepPartial<T> makes all nested properties optional recursively.
-
-// Custom DeepPartial
-// type DeepPartial<T> = {
-//     [P in keyof T]?: T[P] extends object
-//         ? DeepPartial<T[P]>
-//         : T[P];
-// };
-// Example
-// interface Employee {
-//     name: string;
-//     address: {
-//         city: string;
-//         pin: number;
-//     };
-// }
-
-// const emp: DeepPartial<Employee> = {
-//     address: {
-//         city: "Patna"
-//     }
-// };
-
-// console.log(emp);
-// Use
-// Nested object updates
-// Complex API data editing
-// 3. Type Guarding
-
-// Type Guards check the type of a variable during runtime.
-
-// a) typeof
-
-// Used for primitive types.
-
-// function check(value: string | number) {
-//     return typeof value === "string"
-//         ? `String: ${value}`
-//         : `Number: ${value}`;
-// }
-
-// console.log(check("Hello"));
-// console.log(check(10));
-// b) instanceof
-
-// Used with classes/objects.
-
-// class Car {
-//     drive() {
-//         console.log("Driving");
-//     }
-// }
-
-// const vehicle = new Car();
-
-// if (vehicle instanceof Car) {
-//     vehicle.drive();
-// }
-// c) in Operator
-
-// Checks property existence.
-
-// interface Admin {
-//     role: string;
-// }
-
-// interface User {
-//     email: string;
-// }
-
-// function checkPerson(person: Admin | User) {
-//     return "role" in person
-//         ? `Admin Role: ${person.role}`
-//         : `User Email: ${person.email}`;
-// }
-// Use
-// Safe type checking
-// Handling union types
-// 4. Omit Type
-
-// Omit<T, K> removes specific properties from a type.
-
-// Syntax
-// Omit<Type, Keys>
-// Example
-// interface Student {
-//     id: number;
-//     name: string;
-//     password: string;
-// }
-
-// type PublicStudent = Omit<Student, "password">;
-
-// const student: PublicStudent = {
-//     id: 1,
-//     name: "Anisha"
-// };
-
-// console.log(student);
-// Use
-// Hide sensitive fields
-// Create simplified objects
-// 5. Readonly Type
-
-// Readonly<T> makes properties immutable.
-
-// Syntax
-// Readonly<Type>
-// Example
-// interface Product {
-//     id: number;
-//     name: string;
-// }
-
-// const product: Readonly<Product> = {
-//     id: 101,
-//     name: "Laptop"
-// };
-
-// // product.name = "Phone"; 
-
-// console.log(product);
-// Use
-// Prevent accidental modification
-// Immutable data handling
-// Type Narrowing in TypeScript
-// Type Narrowing means reducing a variable’s possible types into a more specific type using conditions.
-// It helps TypeScript understand the exact type during runtime.
-// Express.js?
-
-// Express.js is a lightweight web framework for Node.js used to build:
-
-// Web servers
-// REST APIs
-// Backend applications
-
-// It simplifies server-side development in JavaScript.
-
-// Installation
-// Initialize Project
-// npm init -y
-// Install Express
-// npm install express
-//----------------------------------------------------------------------------Day12-----------------------------------------------------------------------
-// Introduction to Playwright
-
-// Playwright is an automation testing framework developed by Microsoft used for:
-
-// Web Testing
-// UI Automation
-// End-to-End Testing (E2E)
-// Cross-browser testing
-
-// It supports:
-
-// Chromium
-// Firefox
-// WebKit
-
-// Playwright works with:
-
-// JavaScript
-
-
-
-// Official Website: Playwright
-
-// Installation
-// npm init playwright@latest
-
-// This command:
-
-// Creates Playwright project
-// Installs dependencies
-// Creates test folder
-// Creates sample test files
-
-// Run test:
-
-// npx playwright test
-// Playwright is a modern automation framework used for testing web applications efficiently.
-// In this program you learned:
-
-// Creating test cases
-// Opening websites
-// Clicking elements
-// Validating title and headings
-// Using expect()
-// Using locators like `getByRole()``
-//------------------------------------------------------------------------------------------------Day13----------------------------------------------------------------------------------------------------------
-// Express.js Login Application – Synopsis
-// Introduction
-
-// This project is a simple login application developed using Express.js and Node.js.
-// It demonstrates routing, middleware usage, static file serving, form handling, validation, and environment variable configuration.
-
-// Modules Used
-// 1. Express
-// const express = require('express');
-// Used to create the web server.
-// Handles routing and HTTP requests/responses.
-// 2. Path
-// const path = require('path');
-// Helps work with file and directory paths.
-// Used for sending HTML files safely.
-// 3. Dotenv
-// require('dotenv').config();
-// Loads environment variables from a .env file.
-// Used here to store the PORT number securely.
-// Server Initialization
-// const PORT = process.env.PORT;
-// const app = express();
-// PORT stores the server port number from .env.
-// app creates the Express application instance.
-
-// Example .env file:
-
-// PORT=3000
-// Middleware Used
-// 1. JSON Middleware
-// app.use(express.json());
-// Parses incoming JSON data from requests.
-// 2. URL Encoded Middleware
-// app.use(express.urlencoded({ extended: true }));
-// Reads form data submitted through HTML forms.
-// 3. Static Middleware
-// app.use(express.static('public'));
-// Serves static files like:
-// HTML
-// CSS
-// JavaScript
-// Images
-// Routing
-// Home Route
-// app.get('/', async (req, res) => {
-//     res.sendFile(path.join(__dirname, "public/index.html"));
-// });
-// Purpose
-// Opens the homepage when the user visits /.
-// Function
-// Sends index.html from the public folder.
-// Login Route
-// app.get('/login', async (req, res) => {
-//     res.sendFile(path.join(__dirname, "public/login.html"));
-// });
-// Purpose
-// Opens the login page.
-// Function
-// Sends login.html file to the browser.
-// Login Authentication
-// app.post('/loginwithcreds', (req, res) => {
-//     const { username, password } = req.body;
-// Receives username and password from the login form.
-// Uses object destructuring for cleaner code.
-// Validation Logic
-// Username & Password Length Check
-// if(username.length <= 3 || password.length <= 5)
-// Condition
-// Username must be greater than 3 characters.
-// Password must be greater than 5 characters.
-// Response
-// res.send("Username length must be greater than 3 & Password 5");
-// Login Success Condition
-// else if (username === "admin123" && password === "admin123")
-// Purpose
-// Checks if credentials match predefined values.
-// Response
-// res.send("Login successful");
-// Invalid Login
-// else {
-//     res.status(401).send("Invalid credentials");
-// }
-// Purpose
-// Executes when credentials are incorrect.
-// Status Code
-// 401 = Unauthorized Access
-// Server Listening
-// app.listen(PORT, () => console.log(`App started on PORT:${PORT}`));
-// Purpose
-// Starts the server on the specified port.
-// Output Example
-// App started on PORT:3000
-// Features of the Application
-// Uses Express.js server
-// Handles GET and POST requests
-// Uses middleware for request parsing
-// Serves static HTML files
-// Performs basic login validation
-// Uses environment variables
-// Sends proper HTTP status codes
-// Conclusion
-
-// This Express.js login application is a beginner-friendly backend project that demonstrates:
-
-// Routing
-// Middleware
-// Form handling
-// Authentication logic
-// Static file serving
-// Environment variable management
-
-// It provides the foundation for building advanced authentication systems using databases and secure password encryption in future applications.
+}
+Example
+function welcome(name = "Guest") {
+    console.log(`Welcome ${name}!`);
+}
+
+welcome("Aaryan"); // Welcome Aaryan!
+welcome();         // Welcome Guest!
+Benefits
+Avoids undefined values
+Makes functions cleaner
+Reduces manual checking
+2. Spread Operator (...)
+
+The spread operator expands elements of an array or object.
+
+Array Spread
+
+Used to copy or merge arrays.
+
+Example
+const nums = [1, 2, 3];
+const newNums = [...nums, 4, 5];
+
+console.log(newNums);
+Output
+[1, 2, 3, 4, 5]
+Object Spread
+
+Used to copy or extend objects.
+
+Example
+const obj = { name: "Aryan" };
+
+const updatedObj = {
+    ...obj,
+    age: 25
+};
+
+console.log(updatedObj);
+Output
+{ name: "Aryan", age: 25 }
+Benefits
+Easy cloning
+Immutable updates
+Cleaner syntax
+3. Rest Operator (...)
+
+The rest operator collects multiple values into a single array.
+
+Rest Parameters in Functions
+Example
+const cal = {
+    sum: (...nums) => nums.reduce((a, b) => a + b, 0)
+};
+
+console.log(cal.sum(1, 2, 43, 4));
+Output
+50
+How It Works
+(...nums)
+
+collects all arguments into an array:
+
+[1, 2, 43, 4]
+Benefits
+Handles unlimited arguments
+Replaces arguments object
+Cleaner function design
+4. Array Destructuring
+
+Destructuring extracts array values into variables based on position.
+
+Syntax
+const [a, b] = array;
+Example
+const [first, second, third, fourth] =
+["Aryan", "Arush", "Vivek", "Rohit"];
+
+console.log(first, second);
+Output
+Aryan Arush
+Rest with Destructuring
+Example
+const [one, two, ...three] = [1, 3, 5, 6, 7];
+
+console.log(one);
+console.log(two);
+console.log(three);
+Output
+1
+3
+[5, 6, 7]
+Benefits
+Cleaner extraction
+Reduces repetitive code
+Easy handling of remaining values
+5. Object Destructuring
+
+Extracts object properties into variables using keys.
+
+Syntax
+const { key } = object;
+Example
+const { name, age } = {
+    name: "Aryan",
+    age: 25
+};
+
+console.log(name, age);
+Output
+Aryan 25
+What is TypeScript?
+
+TypeScript is a superset of JavaScript developed by Microsoft.
+
+Adds static typing
+Helps catch errors during development
+Compiles into normal JavaScript
+Used in Angular, React, Node.js, etc.
+6. Enums
+
+Enums store fixed constant values.
+8. Tuples
+
+Tuples store fixed-size arrays with fixed datatypes.
+. Generics
+
+Generics create reusable components.
+
+Generic Function
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+-------------------------------------------------------------------------------------Day10--------------------------------------------------------------
+ Partial Type
+
+Partial<T> makes all properties of a type optional.
+
+Syntax
+Partial<Type>
+Example
+interface User {
+    id: number;
+    name: string;
+    email: string;
+}
+
+const updateUser: Partial<User> = {
+    name: "Anisha"
+};
+
+console.log(updateUser);
+Use
+Updating objects
+Optional form fields
+Patch APIs
+2. DeepPartial Type
+
+DeepPartial<T> makes all nested properties optional recursively.
+
+Custom DeepPartial
+type DeepPartial<T> = {
+    [P in keyof T]?: T[P] extends object
+        ? DeepPartial<T[P]>
+        : T[P];
+};
+Example
+interface Employee {
+    name: string;
+    address: {
+        city: string;
+        pin: number;
+    };
+}
+
+const emp: DeepPartial<Employee> = {
+    address: {
+        city: "Patna"
+    }
+};
+
+console.log(emp);
+Use
+Nested object updates
+Complex API data editing
+3. Type Guarding
+
+Type Guards check the type of a variable during runtime.
+
+a) typeof
+
+Used for primitive types.
+
+function check(value: string | number) {
+    return typeof value === "string"
+        ? `String: ${value}`
+        : `Number: ${value}`;
+}
+
+console.log(check("Hello"));
+console.log(check(10));
+b) instanceof
+
+Used with classes/objects.
+
+class Car {
+    drive() {
+        console.log("Driving");
+    }
+}
+
+const vehicle = new Car();
+
+if (vehicle instanceof Car) {
+    vehicle.drive();
+}
+c) in Operator
+
+Checks property existence.
+
+interface Admin {
+    role: string;
+}
+
+interface User {
+    email: string;
+}
+
+function checkPerson(person: Admin | User) {
+    return "role" in person
+        ? `Admin Role: ${person.role}`
+        : `User Email: ${person.email}`;
+}
+Use
+Safe type checking
+Handling union types
+4. Omit Type
+
+Omit<T, K> removes specific properties from a type.
+
+Syntax
+Omit<Type, Keys>
+Example
+interface Student {
+    id: number;
+    name: string;
+    password: string;
+}
+
+type PublicStudent = Omit<Student, "password">;
+
+const student: PublicStudent = {
+    id: 1,
+    name: "Anisha"
+};
+
+console.log(student);
+Use
+Hide sensitive fields
+Create simplified objects
+5. Readonly Type
+
+Readonly<T> makes properties immutable.
+
+Syntax
+Readonly<Type>
+Example
+interface Product {
+    id: number;
+    name: string;
+}
+
+const product: Readonly<Product> = {
+    id: 101,
+    name: "Laptop"
+};
+
+// product.name = "Phone"; 
+
+console.log(product);
+Use
+Prevent accidental modification
+Immutable data handling
+Type Narrowing in TypeScript
+Type Narrowing means reducing a variable’s possible types into a more specific type using conditions.
+It helps TypeScript understand the exact type during runtime.
+Express.js?
+
+Express.js is a lightweight web framework for Node.js used to build:
+
+Web servers
+REST APIs
+Backend applications
+
+It simplifies server-side development in JavaScript.
+
+Installation
+Initialize Project
+npm init -y
+Install Express
+npm install express
+----------------------------------------------------------------------------Day12-----------------------------------------------------------------------
+Introduction to Playwright
+
+Playwright is an automation testing framework developed by Microsoft used for:
+
+Web Testing
+UI Automation
+End-to-End Testing (E2E)
+Cross-browser testing
+
+It supports:
+
+Chromium
+Firefox
+WebKit
+
+Playwright works with:
+
+JavaScript
+
+
+
+Official Website: Playwright
+
+Installation
+npm init playwright@latest
+
+This command:
+
+Creates Playwright project
+Installs dependencies
+Creates test folder
+Creates sample test files
+
+Run test:
+
+npx playwright test
+Playwright is a modern automation framework used for testing web applications efficiently.
+In this program you learned:
+
+Creating test cases
+Opening websites
+Clicking elements
+Validating title and headings
+Using expect()
+Using locators like `getByRole()``
+------------------------------------------------------------------------------------------------Day13----------------------------------------------------------------------------------------------------------
+Express.js Login Application – Synopsis
+Introduction
+
+This project is a simple login application developed using Express.js and Node.js.
+It demonstrates routing, middleware usage, static file serving, form handling, validation, and environment variable configuration.
+
+Modules Used
+1. Express
+const express = require('express');
+Used to create the web server.
+Handles routing and HTTP requests/responses.
+2. Path
+const path = require('path');
+Helps work with file and directory paths.
+Used for sending HTML files safely.
+3. Dotenv
+require('dotenv').config();
+Loads environment variables from a .env file.
+Used here to store the PORT number securely.
+Server Initialization
+const PORT = process.env.PORT;
+const app = express();
+PORT stores the server port number from .env.
+app creates the Express application instance.
+
+Example .env file:
+
+PORT=3000
+Middleware Used
+1. JSON Middleware
+app.use(express.json());
+Parses incoming JSON data from requests.
+2. URL Encoded Middleware
+app.use(express.urlencoded({ extended: true }));
+Reads form data submitted through HTML forms.
+3. Static Middleware
+app.use(express.static('public'));
+Serves static files like:
+HTML
+CSS
+JavaScript
+Images
+Routing
+Home Route
+app.get('/', async (req, res) => {
+    res.sendFile(path.join(__dirname, "public/index.html"));
+});
+Purpose
+Opens the homepage when the user visits /.
+Function
+Sends index.html from the public folder.
+Login Route
+app.get('/login', async (req, res) => {
+    res.sendFile(path.join(__dirname, "public/login.html"));
+});
+Purpose
+Opens the login page.
+Function
+Sends login.html file to the browser.
+Login Authentication
+app.post('/loginwithcreds', (req, res) => {
+    const { username, password } = req.body;
+Receives username and password from the login form.
+Uses object destructuring for cleaner code.
+Validation Logic
+Username & Password Length Check
+if(username.length <= 3 || password.length <= 5)
+Condition
+Username must be greater than 3 characters.
+Password must be greater than 5 characters.
+Response
+res.send("Username length must be greater than 3 & Password 5");
+Login Success Condition
+else if (username === "admin123" && password === "admin123")
+Purpose
+Checks if credentials match predefined values.
+Response
+res.send("Login successful");
+Invalid Login
+else {
+    res.status(401).send("Invalid credentials");
+}
+Purpose
+Executes when credentials are incorrect.
+Status Code
+401 = Unauthorized Access
+Server Listening
+app.listen(PORT, () => console.log(`App started on PORT:${PORT}`));
+Purpose
+Starts the server on the specified port.
+Output Example
+App started on PORT:3000
+Features of the Application
+Uses Express.js server
+Handles GET and POST requests
+Uses middleware for request parsing
+Serves static HTML files
+Performs basic login validation
+Uses environment variables
+Sends proper HTTP status codes
+Conclusion
+
+This Express.js login application is a beginner-friendly backend project that demonstrates:
+
+Routing
+Middleware
+Form handling
+Authentication logic
+Static file serving
+Environment variable management
+
+It provides the foundation for building advanced authentication systems using databases and secure password encryption in future applications.
+
+
+----------------------------------------------------------------------------------------------------------------Day14--------------------------------------------------------------------------------------------------------------------------
+Playwright provides a screenshot feature that captures images of web pages or specific web elements during automated testing. Screenshots are useful for debugging, validating UI design, and maintaining visual evidence of test execution.
+
+Types of Screenshots
+1. Full Page Screenshot
+
+Captures the complete webpage including the scrollable area.
+
+await page.screenshot({
+  fullPage: true,
+  path: 'full-page.png'
+});
+Output
+full-page.png
+2. Element Screenshot
+
+Captures only a specific element such as a button, image, or form.
+
+await btn.screenshot({
+  path: 'button.png'
+});
+Output
+button.png
+ Uses of Screenshots
+Helps in debugging failed test cases
+Provides proof of successful testing
+Verifies UI appearance
+Detects visual issues in webpages
+Useful in automation reports
+ Screenshot Storage
+
+Screenshots are stored in the project folder or in a specified directory.
+
+Example:
+
+path: 'screenshots/login-page.png'
+
+Creates:
+
+screenshots/
+   login-page.png
+✅ Advantages
+Easy error analysis
+Better test documentation
+Improves automation testing quality
+Supports visual verification
+✅ Conclusion
+
+The screenshot feature in Playwright is an important automation testing capability that captures webpage visuals during execution. It helps testers analyze application behavior, identify UI problems, and maintain reliable test evidence efficiently.
