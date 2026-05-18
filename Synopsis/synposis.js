@@ -1178,11 +1178,99 @@ Creates:
 
 screenshots/
    login-page.png
-✅ Advantages
+Advantages
 Easy error analysis
 Better test documentation
 Improves automation testing quality
 Supports visual verification
-✅ Conclusion
+Conclusion
 
 The screenshot feature in Playwright is an important automation testing capability that captures webpage visuals during execution. It helps testers analyze application behavior, identify UI problems, and maintain reliable test evidence efficiently.
+
+
+
+--------------------------------------------------------------------------------------Day15-----------------------------------------------------------------------------------------------------------------------
+
+
+This Playwright script demonstrates different test annotations and timeout controls used in automation testing. These features help testers manage test execution, handle unstable tests, improve reporting, and customize execution time.
+
+The script uses the @playwright/test framework and groups all tests inside a test.describe() block named "Annotations and Timeouts".
+
+
+1. test.skip()
+test.skip('Skip this test because feature is not ready', async ({ page }) => {
+Purpose
+Skips the execution of a test.
+Used when a feature is incomplete or temporarily unavailable.
+Benefit
+Prevents unnecessary test failures.
+Helps maintain clean test reports.
+Example
+
+The test for example.com is skipped completely and will not run.
+
+2. test.fail()
+test.fail();
+Purpose
+Marks a test as an expected failure.
+If the test actually fails, Playwright treats it as successful.
+If the test unexpectedly passes, Playwright reports an error.
+Benefit
+Useful for known bugs that are not fixed yet.
+Keeps track of failing scenarios intentionally.
+Example
+
+The heading text is intentionally incorrect:
+
+await expect(page.locator('h1')).toHaveText('Wrong Text');
+
+Since the text does not match, the test fails as expected.
+
+3. test.fixme()
+test.fixme('Fix this flaky test later', async ({ page }) => {
+Purpose
+Skips a broken or unstable test.
+Indicates the test requires fixing in the future.
+Benefit
+Helps identify flaky tests separately from normal skipped tests.
+Difference Between skip and fixme
+skip	fixme
+Feature not ready	Test is broken/flaky
+Temporary skip	Needs fixing
+4. test.slow() and test.setTimeout()
+test.slow();
+test.setTimeout(10000);
+Purpose
+test.slow() increases the default timeout by 3 times.
+test.setTimeout() sets a custom timeout value.
+Benefit
+Useful for slow-loading applications or complex operations.
+Example
+test.setTimeout(10000);
+
+This sets the timeout to exactly 10 seconds.
+
+5. test.step()
+await test.step('Navigate to website', async () => {
+Purpose
+Divides test execution into logical steps.
+Improves readability and reporting.
+Benefit
+Helps generate detailed reports.
+Makes debugging easier.
+Steps appear clearly in Allure reports.
+Example Steps
+Navigate to website
+Verify the heading text
+Websites Used
+Playwright official site: Playwright
+Example Domain: Example Domain
+Advantages of Using Annotations and Timeouts
+Improves test management.
+Helps handle unstable tests.
+Makes reports cleaner and more understandable.
+Allows better debugging.
+Prevents unnecessary failures due to slow execution.
+
+
+This Playwright script demonstrates how annotations like skip, fail, fixme, slow, and step can improve automation testing. These features help testers organize tests, handle known issues, customize execution time, and generate professional test reports.
